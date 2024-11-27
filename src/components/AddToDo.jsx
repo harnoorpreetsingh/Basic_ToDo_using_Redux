@@ -10,7 +10,7 @@ function AddTodo() {
         dispatch(addToDo(Input))
         setInput('')
     }
-
+console.log(Input)
     return (
         <form onSubmit={addToDoHandler} className="space-x-3 mt-12">
         <input
@@ -21,7 +21,7 @@ function AddTodo() {
           onChange={(e) => setInput(e.target.value)}
         />
         <button
-          type="submit"
+          type="submit"  disabled={Input==''}
           className="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg"
         >
           Add Todo

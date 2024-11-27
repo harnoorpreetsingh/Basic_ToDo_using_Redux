@@ -21,7 +21,7 @@ const ToDo = () => {
 
   return (
     <>
-      <div>ToDo</div>
+      <div>ToDos:   </div>
       <ul>
         {todo.map((td) => (
           <li key={td.id}>
